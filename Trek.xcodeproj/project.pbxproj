@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B8D8E4526349975004204C4 /* TrekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E4426349975004204C4 /* TrekApp.swift */; };
+		4B8D8E4726349975004204C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E4626349975004204C4 /* ContentView.swift */; };
+		4B8D8E4926349976004204C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D8E4826349976004204C4 /* Assets.xcassets */; };
+		4B8D8E4C26349976004204C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D8E4B26349976004204C4 /* Preview Assets.xcassets */; };
+		4B8D8E5726349976004204C4 /* TrekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E5626349976004204C4 /* TrekTests.swift */; };
+		4B8D8E6226349976004204C4 /* TrekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E6126349976004204C4 /* TrekUITests.swift */; };
+		4B8D8E7426349C01004204C4 /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D8E7226349C01004204C4 /* tips.json */; };
+		4B8D8E7526349C01004204C4 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D8E7326349C01004204C4 /* locations.json */; };
+		4B8D8E7A2634A704004204C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E792634A704004204C4 /* Location.swift */; };
+		4B8D8E7F2634AAC2004204C4 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E7E2634AAC2004204C4 /* Locations.swift */; };
+		4B8D8E842634B60A004204C4 /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E832634B60A004204C4 /* WorldView.swift */; };
+		4B8D8E8C2634C833004204C4 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E8B2634C833004204C4 /* Tip.swift */; };
+		4B8D8E912634C8FB004204C4 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D8E902634C8FB004204C4 /* TipsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B8D8E5326349976004204C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B8D8E3926349975004204C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B8D8E4026349975004204C4;
+			remoteInfo = Trek;
+		};
+		4B8D8E5E26349976004204C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B8D8E3926349975004204C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B8D8E4026349975004204C4;
+			remoteInfo = Trek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B8D8E4126349975004204C4 /* Trek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8D8E4426349975004204C4 /* TrekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekApp.swift; sourceTree = "<group>"; };
+		4B8D8E4626349975004204C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B8D8E4826349976004204C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B8D8E4B26349976004204C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B8D8E4D26349976004204C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8D8E5226349976004204C4 /* TrekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8D8E5626349976004204C4 /* TrekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekTests.swift; sourceTree = "<group>"; };
+		4B8D8E5826349976004204C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8D8E5D26349976004204C4 /* TrekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8D8E6126349976004204C4 /* TrekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekUITests.swift; sourceTree = "<group>"; };
+		4B8D8E6326349976004204C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8D8E7226349C01004204C4 /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
+		4B8D8E7326349C01004204C4 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		4B8D8E792634A704004204C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4B8D8E7E2634AAC2004204C4 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		4B8D8E832634B60A004204C4 /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		4B8D8E8B2634C833004204C4 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		4B8D8E902634C8FB004204C4 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8D8E3E26349975004204C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E4F26349976004204C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E5A26349976004204C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B8D8E3826349975004204C4 = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E832634B60A004204C4 /* WorldView.swift */,
+				4B8D8E8B2634C833004204C4 /* Tip.swift */,
+				4B8D8E902634C8FB004204C4 /* TipsView.swift */,
+				4B8D8E792634A704004204C4 /* Location.swift */,
+				4B8D8E7E2634AAC2004204C4 /* Locations.swift */,
+				4B8D8E4326349975004204C4 /* Trek */,
+				4B8D8E5526349976004204C4 /* TrekTests */,
+				4B8D8E6026349976004204C4 /* TrekUITests */,
+				4B8D8E4226349975004204C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B8D8E4226349975004204C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E4126349975004204C4 /* Trek.app */,
+				4B8D8E5226349976004204C4 /* TrekTests.xctest */,
+				4B8D8E5D26349976004204C4 /* TrekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B8D8E4326349975004204C4 /* Trek */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E4426349975004204C4 /* TrekApp.swift */,
+				4B8D8E4626349975004204C4 /* ContentView.swift */,
+				4B8D8E4826349976004204C4 /* Assets.xcassets */,
+				4B8D8E4D26349976004204C4 /* Info.plist */,
+				4B8D8E7326349C01004204C4 /* locations.json */,
+				4B8D8E7226349C01004204C4 /* tips.json */,
+				4B8D8E4A26349976004204C4 /* Preview Content */,
+			);
+			path = Trek;
+			sourceTree = "<group>";
+		};
+		4B8D8E4A26349976004204C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E4B26349976004204C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B8D8E5526349976004204C4 /* TrekTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E5626349976004204C4 /* TrekTests.swift */,
+				4B8D8E5826349976004204C4 /* Info.plist */,
+			);
+			path = TrekTests;
+			sourceTree = "<group>";
+		};
+		4B8D8E6026349976004204C4 /* TrekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D8E6126349976004204C4 /* TrekUITests.swift */,
+				4B8D8E6326349976004204C4 /* Info.plist */,
+			);
+			path = TrekUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B8D8E4026349975004204C4 /* Trek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8D8E6626349976004204C4 /* Build configuration list for PBXNativeTarget "Trek" */;
+			buildPhases = (
+				4B8D8E3D26349975004204C4 /* Sources */,
+				4B8D8E3E26349975004204C4 /* Frameworks */,
+				4B8D8E3F26349975004204C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trek;
+			productName = Trek;
+			productReference = 4B8D8E4126349975004204C4 /* Trek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B8D8E5126349976004204C4 /* TrekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8D8E6926349976004204C4 /* Build configuration list for PBXNativeTarget "TrekTests" */;
+			buildPhases = (
+				4B8D8E4E26349976004204C4 /* Sources */,
+				4B8D8E4F26349976004204C4 /* Frameworks */,
+				4B8D8E5026349976004204C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B8D8E5426349976004204C4 /* PBXTargetDependency */,
+			);
+			name = TrekTests;
+			productName = TrekTests;
+			productReference = 4B8D8E5226349976004204C4 /* TrekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B8D8E5C26349976004204C4 /* TrekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8D8E6C26349976004204C4 /* Build configuration list for PBXNativeTarget "TrekUITests" */;
+			buildPhases = (
+				4B8D8E5926349976004204C4 /* Sources */,
+				4B8D8E5A26349976004204C4 /* Frameworks */,
+				4B8D8E5B26349976004204C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B8D8E5F26349976004204C4 /* PBXTargetDependency */,
+			);
+			name = TrekUITests;
+			productName = TrekUITests;
+			productReference = 4B8D8E5D26349976004204C4 /* TrekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B8D8E3926349975004204C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4B8D8E4026349975004204C4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4B8D8E5126349976004204C4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4B8D8E4026349975004204C4;
+					};
+					4B8D8E5C26349976004204C4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4B8D8E4026349975004204C4;
+					};
+				};
+			};
+			buildConfigurationList = 4B8D8E3C26349975004204C4 /* Build configuration list for PBXProject "Trek" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B8D8E3826349975004204C4;
+			productRefGroup = 4B8D8E4226349975004204C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B8D8E4026349975004204C4 /* Trek */,
+				4B8D8E5126349976004204C4 /* TrekTests */,
+				4B8D8E5C26349976004204C4 /* TrekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B8D8E3F26349975004204C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8D8E4C26349976004204C4 /* Preview Assets.xcassets in Resources */,
+				4B8D8E4926349976004204C4 /* Assets.xcassets in Resources */,
+				4B8D8E7526349C01004204C4 /* locations.json in Resources */,
+				4B8D8E7426349C01004204C4 /* tips.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E5026349976004204C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E5B26349976004204C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B8D8E3D26349975004204C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8D8E4726349975004204C4 /* ContentView.swift in Sources */,
+				4B8D8E7A2634A704004204C4 /* Location.swift in Sources */,
+				4B8D8E842634B60A004204C4 /* WorldView.swift in Sources */,
+				4B8D8E8C2634C833004204C4 /* Tip.swift in Sources */,
+				4B8D8E912634C8FB004204C4 /* TipsView.swift in Sources */,
+				4B8D8E7F2634AAC2004204C4 /* Locations.swift in Sources */,
+				4B8D8E4526349975004204C4 /* TrekApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E4E26349976004204C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8D8E5726349976004204C4 /* TrekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8D8E5926349976004204C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8D8E6226349976004204C4 /* TrekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B8D8E5426349976004204C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B8D8E4026349975004204C4 /* Trek */;
+			targetProxy = 4B8D8E5326349976004204C4 /* PBXContainerItemProxy */;
+		};
+		4B8D8E5F26349976004204C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B8D8E4026349975004204C4 /* Trek */;
+			targetProxy = 4B8D8E5E26349976004204C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B8D8E6426349976004204C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B8D8E6526349976004204C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B8D8E6726349976004204C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Trek/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Trek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.Trek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B8D8E6826349976004204C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Trek/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Trek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.Trek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B8D8E6A26349976004204C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				INFOPLIST_FILE = TrekTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.TrekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trek.app/Trek";
+			};
+			name = Debug;
+		};
+		4B8D8E6B26349976004204C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				INFOPLIST_FILE = TrekTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.TrekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trek.app/Trek";
+			};
+			name = Release;
+		};
+		4B8D8E6D26349976004204C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				INFOPLIST_FILE = TrekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.TrekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trek;
+			};
+			name = Debug;
+		};
+		4B8D8E6E26349976004204C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FSVT8TDP6;
+				INFOPLIST_FILE = TrekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = niranjan.TrekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Trek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B8D8E3C26349975004204C4 /* Build configuration list for PBXProject "Trek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8D8E6426349976004204C4 /* Debug */,
+				4B8D8E6526349976004204C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8D8E6626349976004204C4 /* Build configuration list for PBXNativeTarget "Trek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8D8E6726349976004204C4 /* Debug */,
+				4B8D8E6826349976004204C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8D8E6926349976004204C4 /* Build configuration list for PBXNativeTarget "TrekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8D8E6A26349976004204C4 /* Debug */,
+				4B8D8E6B26349976004204C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8D8E6C26349976004204C4 /* Build configuration list for PBXNativeTarget "TrekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8D8E6D26349976004204C4 /* Debug */,
+				4B8D8E6E26349976004204C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B8D8E3926349975004204C4 /* Project object */;
+}
